@@ -63,7 +63,6 @@ var actualCode = '(' + function() {
 } + ')();';
 
 // Inject code into the page to access the underlying JavaScript objects
-// https://stackoverflow.com/questions/9515704/building-a-chrome-extension-inject-code-in-a-page-using-a-content-script
 var script = document.createElement('script');
 script.textContent = actualCode;
 (document.head || document.documentElement).appendChild(script);
